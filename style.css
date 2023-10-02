@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(https://a-static.besthdwallpaper.com/nature-landscape-art-wallpaper-1680x1260-81119_24.jpg);
+    background-position: center;
+    background-size: 1200px;
+    background-repeat: no-repeat;
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#avatar{
+    width: 200px;
+    position: relative;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 20px;
+}
+#avatar img{
+    width: 100%;
+    object-fit: cover;
+}
+.name{
+    position: relative;
+    width: 100%;
+}
+.name h2{
+    font-family: 'Teko', sans-serif;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 2em;
+    color: #fff;
+}
+
+.social_network{
+    /* border-top: 1.5px solid #cdcdcd; */
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15px;
+    padding: 10px 20px;
+
+}
+.social_network .item{
+    position: relative;
+    width: 90%;
+}
+.item:active{
+    transform: scale(0.9);
+}
+.social_network #facebook, #tiktok, #mbbank,#techcombank, #instagram{
+    width: 100%;
+    background-color: var(--color);
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: flex;
+    color: #fff;
+    margin-top: 15px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+#facebook  span, #tiktok>span, #mbbank> span, #instagram> span, #techcombank>span{
+    font-family: 'Roboto', sans-serif;
+}
+.modal-header .titleMb{
+    display: flex;
+    align-items: center;
+}
+.titleMb .logoMb{
+    width: 50px;
+    margin-left: 10px;
+}
+.modal-header .titleMb .logoMb img{
+    width: 100%;
+    object-fit: cover;
+}
